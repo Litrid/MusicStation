@@ -18,21 +18,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -50,24 +40,45 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  width: 100%
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.logo {
+  height: 10%;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  transform: scale(1, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-top: 15px;
+}
+
+.github_logo {
+  width: 34px;
+  height: 34px;
+  filter: invert(92%) sepia(0%) saturate(0%) hue-rotate(222deg) brightness(97%) contrast(86%);
+  cursor: pointer;
+  margin-left: 60px;
+}
+
+.youtube_logo {
+  width: 25%;
+  height: auto;
+  cursor: pointer;
 }
